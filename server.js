@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const PropertiesReader = require('properties-reader')
 const MongoClient = require('mongodb').MongoClient
 
-const connectionString = `mongodb+srv://star-wars-quotes:${password}@cluster0.dzrtf.mongodb.net/?retryWrites=true&w=majority`
+const properties = PropertiesReader('resources/config.properties')
+const connectionString = properties.get('connectionString')
+
 
 //Main DB connection
 MongoClient.connect(connectionString, (err, client) => {
