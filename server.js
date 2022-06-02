@@ -1,11 +1,13 @@
 const express = require('express')
-const app = express()
+require('dotenv').config();
+
 const bodyParser = require('body-parser')
 const PropertiesReader = require('properties-reader')
 const MongoClient = require('mongodb').MongoClient
 
+const app = express()
 const properties = PropertiesReader('resources/config.properties')
-const connectionString = properties.get('connectionString')
+const connectionString = process.env.CONN_STRING
 
 
 //Main DB connection
