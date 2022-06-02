@@ -20,7 +20,7 @@ MongoClient.connect(connectionString, (err, client) => {
     app.use(bodyParser.json())
     app.set('view engine', 'ejs')
 
-    app.listen(3000, _ => {
+    app.listen(process.env.PORT || PORT, _ => {
         console.log("Server is live on port 3000")
     })
 
