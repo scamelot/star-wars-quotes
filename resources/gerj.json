@@ -33,5 +33,6 @@
         "Intelligence": 17,
         "Wisdom": 10,
         "Charisma": 12
-    }
+    },
+    "equipment": {}
 }
