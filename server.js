@@ -1,6 +1,6 @@
 const express = require('express')
 require('dotenv').config();
-const readFile = require('fs/promises')
+const fs = require('fs').promises
 
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
@@ -39,7 +39,7 @@ MongoClient.connect(connectionString, (err, client) => {
 
     app.get('/dnd/:charName', async (req, res) => {
         const json = JSON.parse(
-            await readFile(`./resources/${req.params.charName}.json`)
+            await fs.promises.readFile(`./resources/${req.params.charName}.json`)
                 )
         res.send(json)
     })
