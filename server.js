@@ -8,7 +8,6 @@ const MongoClient = require('mongodb').MongoClient
 
 const app = express()
 const connectionString = process.env.CONN_STRING
-console.log(connectionString)
 
 //Main DB connection
 MongoClient.connect(connectionString, (err, client) => {
