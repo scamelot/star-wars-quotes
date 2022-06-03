@@ -18,7 +18,7 @@
               <span><%= stat %></span>
               <% if (typeof char[stat] == 'object') { %>
               <% for (substat in char[stat]) {%>
-                <span><%=char[stat][substat] ><%=substat %></span>
+                <span><%=char[stat][substat] %><%=substat %></span>
                 <% } } else {%><span><%=char[stat]%></span><%}%>
               </li> <% } %>
               
