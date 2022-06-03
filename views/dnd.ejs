@@ -13,11 +13,11 @@
       <h2><%= char.name %></h2>
       <h3>Stats:</h3>
       <ul class="stats">
-        <% char.forEach((stat) => {%>
+        <% for (stat in char) {%>
           <li class="stat">
               <span><%= stat %></span>
           </li>
-       <% }) %>
+       <% } %>
       </ul>
     </div>
   </section>
