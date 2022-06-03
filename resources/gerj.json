@@ -1,0 +1,37 @@
+{
+    "hp":45,
+    "ac":16,
+    "class": "rogue",
+    "subclass": "mastermind",
+    "hitDie": "d8",
+    "level": 4,
+    "proficiency": 2,
+    "skills": {
+        "Acrobatics (Dex)": 2,
+        "Animal Handling (Wis)": 2,
+        "Arcana (Int)": 3,
+        "Athletics (Str)": 2,
+        "Deception (Cha)": 2,
+        "History (Int)": 2,
+        "Insight (Wis)": 2,
+        "Intimidation (Cha)":2,
+        "Investigation (Int)": 3,
+        "Medicine (Wis)": 1,
+        "Nature (Int)": 2,
+        "Perception (Wis)": 2,
+        "Performance (Cha)": 2,
+        "Persuasion (Cha)": 2,
+        "Religion (Int)": 2,
+        "Sleight of Hand (Dex)": 2,
+        "Stealth (Dex)": 2,
+        "Survival (Wis)": 2
+    },
+    "abilities": {
+        "Strength": 11,
+        "Dexterity": 16,
+        "Constitution": 13,
+        "Intelligence": 17,
+        "Wisdom": 10,
+        "Charisma": 12
+    }
+}

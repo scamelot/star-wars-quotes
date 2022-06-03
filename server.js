@@ -1,12 +1,13 @@
 const express = require('express')
 require('dotenv').config();
+const readFile = require('fs/promises')
 
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
 const app = express()
 const connectionString = process.env.CONN_STRING
-
+console.log(connectionString)
 
 //Main DB connection
 MongoClient.connect(connectionString, (err, client) => {
@@ -34,6 +35,15 @@ MongoClient.connect(connectionString, (err, client) => {
         } catch (err) {
             console.error(err)
         }
+    })
+
+    app.get('/dnd/:charName', async (req, res) => {
+        const json = JSON.parse(
+            await readFile(
+                new URL(`./resources/${charName}.json`)
+                )
+            )
+        res.send(json)
     })
 
     app.put('/quotes', async (req, res) => {
