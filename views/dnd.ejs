@@ -16,7 +16,7 @@
         <% for (stat in char) {%>
           <li class="stat">
               <span><%= stat %></span>
-              <% if (typeof stat == "object") {
+              <% if (Object(stat) === stat) {
                     for(substat in stat) {%>
                         <span><%=substat %><%=stat[substat]%></span>
                     <%} } else {%>
