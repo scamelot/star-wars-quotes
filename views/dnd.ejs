@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>D&D</title>
+</head>
+<body>
+    <h1>Dungeons & Dragons</h1>
+    <section>
+    <div>
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <section>
+      <h2><%= char.name ></h2>
+      <h3>Stats:</h3>
+      <ul class="stats">
+        <% char.forEach((stat) => {%>
+          <li class="stat">
+              <span><%= stat %></span>
+          </li>
+       <% }) %>
+      </ul>
+    </div>
+  </section>
+    <script src="/main.js"></script>
+</body>
+
+</html>
