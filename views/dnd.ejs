@@ -15,10 +15,10 @@
       <ul class="stats">
         <% for (stat in char) {%>
           <li class="stat">
-              <span><%= stat %></span>
+              <span><%= stat %> :</span>
               <% if (typeof char[stat] == 'object') { %>
               <% for (substat in char[stat]) {%>
-                <span><%=char[stat][substat] %><%=substat %></span>
+                <span> <%=substat %> : <%=char[stat][substat] %></span><br>
                 <% } } else {%><span><%=char[stat]%></span><%}%>
               </li> <% } %>
               
