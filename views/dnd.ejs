@@ -16,6 +16,9 @@
         <% for (stat in char) {%>
           <li class="stat">
               <span><%= stat %></span>
+              <% for (substat in stat) {%>
+                <span><%=substat %></span>
+                <% } %>
               </li> <% } %>
      </section>
     <script src="/main.js"></script>
