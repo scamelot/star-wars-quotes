@@ -40,7 +40,7 @@ MongoClient.connect(connectionString, (err, client) => {
     app.get('/dnd/:charName', async (req, res) => {
         const json = JSON.parse(
             await readFile(
-                new URL(`./resources/${charName}.json`, import.meta.url)
+                new URL(`./resources/${charName}.json`)
                 )
             )
         res.send(json)
