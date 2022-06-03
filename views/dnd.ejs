@@ -15,17 +15,17 @@
       <ul class="stats">
         <% for (stat in char) {%>
           <li class="stat">
+              <ul>
               <span><%= stat %></span>
               <% if (Object(stat) === stat) {
                     for(substat in stat) {%>
                         <span><%=substat %><%=stat[substat]%></span>
                     <%} } else {%>
                   <span><%=char[stat] %></span>
-          </li>
        <% } } %>
-      </ul>
-    </div>
-  </section>
+              </ul>
+    </li>
+     </section>
     <script src="/main.js"></script>
 </body>
 
