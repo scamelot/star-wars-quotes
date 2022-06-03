@@ -16,10 +16,12 @@
         <% for (stat in char) {%>
           <li class="stat">
               <span><%= stat %> <%=char[stat]%></span>
+              <% if (typeof char[stat] == 'object') { %>
               <% for (substat in stat) {%>
                 <span><%=char.stat.substat %></span>
-                <% } %>
+                <% } }%>
               </li> <% } %>
+              
      </section>
     <script src="/main.js"></script>
 </body>
