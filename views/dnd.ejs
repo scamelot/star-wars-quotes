@@ -19,10 +19,10 @@
               <% if (typeof(stat) == "object") {
                     for(substat in stat) {%>
                         <span><%=substat %><%=stat[substat]%></span>
-                    <%} else {%>
+                    <%} } else {%>
                   <span><%=char[stat] %></span>
           </li>
-       <% } %>
+       <% } } %>
       </ul>
     </div>
   </section>
