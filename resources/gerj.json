@@ -1,6 +1,7 @@
 {
     "hp":45,
     "ac":16,
+    "name": "Gerj Barnum",
     "class": "rogue",
     "subclass": "mastermind",
     "hitDie": "d8",
