@@ -38,6 +38,8 @@ MongoClient.connect(connectionString, (err, client) => {
     })
 
     app.get('/dnd/:charName', async (req, res) => {
+        const charName = req.params.charName
+        console.log(charName)
         const json = JSON.parse(
             await fs.promises.readFile(`./resources/${req.params.charName}.json`)
                 )
