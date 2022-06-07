@@ -2,6 +2,8 @@
     "hp":45,
     "ac":16,
     "name": "Lufira Mugwort",
+    "race": "halfling",
+    "subrace": "lightfoot",
     "class": "rogue",
     "subclass": "thief",
     "hitdie": "d8",
