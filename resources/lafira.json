@@ -1,0 +1,41 @@
+{
+    "hp":45,
+    "ac":16,
+    "name": "Lufira Mugwort",
+    "class": "rogue",
+    "subclass": "thief",
+    "hitdie": "d8",
+    "level": 4,
+    "proficiency": 2,
+    "skills": {
+        "acrobatics (dex)": 2,
+        "animal handling (wis)": 2,
+        "arcana (int)": 3,
+        "athletics (str)": 2,
+        "deception (cha)": 2,
+        "history (int)": 2,
+        "insight (wis)": 2,
+        "intimidation (cha)":2,
+        "investigation (int)": 3,
+        "medicine (wis)": 1,
+        "nature (int)": 2,
+        "perception (wis)": 2,
+        "performance (cha)": 2,
+        "persuasion (cha)": 2,
+        "religion (int)": 2,
+        "sleight of hand (dex)": 2,
+        "stealth (dex)": 2,
+        "survival (wis)": 2
+    },
+    "abilities": {
+        "strength": 11,
+        "dexterity": 17,
+        "constitution": 13,
+        "intelligence": 14,
+        "wisdom": 13,
+        "charisma": 12
+    },
+    "equipment": {
+        "pumpkin seeds": 35
+    }
+}
